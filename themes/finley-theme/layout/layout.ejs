@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <!-- Use <%= page.title %> for dynamic title -->
+ <%
+ var title = page.title;
+
+ if (is_archive()){
+   title = __('archive_a');
+
+   if (is_month()){
+     title += ': ' + page.year + '/' + page.month;
+   } else if (is_year()){
+     title += ': ' + page.year;
+   }
+ } else if (is_category()){
+   title = __('category') + ': ' + page.category;
+ } else if (is_tag()){
+   title = __('tag') + ': ' + page.tag;
+ }
+ %>
+ <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ <link rel="icon" href="<%- theme.favicon %>">
+ <!-- Twitter bootstrap (via cdn) -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ <%- css('css/style') %>
+</head>
+<body>
+ <div class='container'>
+  <%- body %>
+ </div>
+</body>
+</html>

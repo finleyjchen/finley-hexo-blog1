@@ -1,0 +1,5 @@
+Markdown shit
+
+Inserting images
+
+{% asset_img filename [title] %}
