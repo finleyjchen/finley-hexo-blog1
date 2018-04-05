@@ -27,10 +27,21 @@
  <!-- Twitter bootstrap (via cdn) -->
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
  <%- css('css/style') %>
+
 </head>
 <body>
- <div class='container'>
+  <div class="wrap">
+  <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
   <%- body %>
- </div>
+  <footer>
+      <div id="footer-info" class="inner">
+          &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
+          <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
+        </div>
+  </footer>
+</div>
+
 </body>
+
+
 </html>

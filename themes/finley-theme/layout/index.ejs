@@ -3,7 +3,8 @@
        <p><%= config.subtitle %></p>
    
    </div>
-   <div class='row'>
+   <div class='row recent-posts'>
+       <h3>Recent posts</h3>
     <ul>
     <% page.posts.each(function(post){ %>
         <li>
@@ -16,11 +17,13 @@
                    <%= date(post.date, config.date_format) %> 
                </div>
                
-               <% if(post.excerpt) { %>
-                   <p>
-                       <%- post.excerpt %>
-                   </p>
-               <% } %>
+               <div class="post-excerpt">
+                    <% if(post.excerpt) { %>
+                        <%- post.excerpt %>
+                    <% } %>
+               </div>
+               
+               <a href="<%- url_for(post.path) %>" class="read-more">Read more -></a>
         </li>
       <% }) %>
     </ul>

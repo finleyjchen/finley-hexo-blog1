@@ -1,10 +1,23 @@
 <div class='row'>
-    <a class='btn btn-default' href='/'>< Home</a>
+    <a class='btn' href='/'>< Home</a>
    </div>
-   <div class='row article-inner'>
+   <div class='row article-wrap'>
     <h1 class='article-header'><%- page.title %></h1>
     <div class='text-muted'>
            <%= date(page.date, config.date_format) %> 
-       </div>
-    <%- page.content %>
+           <br>
+           <%- list_tags(page.tags, { 
+               show_count:false,
+               class:'article-tag'
+           }) %>
+    </div>
+    <div class="article-inner">
+        <%- page.content %>
+    </div>
+
+    <div class="article-footer">
+        <hr>
+        <p>Author: <%- config.author %></p>
+
+    </div>
    </div>
