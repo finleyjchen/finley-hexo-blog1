@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans+Condensed|IBM+Plex+Sans:100,400,400i,700');
 
-
+a {
+    
+}
 ::selection {
 
 }
@@ -140,10 +142,12 @@ footer {
 .article-tag-list-link {
     transition:0.4s ease-out;
     display:block;
-    width:100px;
     text-align: center;
     border:1px solid black;
-    border-radius:20px;
+    border-radius:1px;
+    padding:.3rem .5rem;
+    margin-right:.3rem;
+    color:black;
 }
 
 .article-tag-list-link:hover {
