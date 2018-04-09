@@ -8,6 +8,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 
 ## Quick Start
 
+
 ### Create a new post
 
 ``` bash
@@ -21,6 +22,8 @@ More info: [Writing](https://hexo.io/docs/writing.html)
 ``` bash
 $ hexo server
 ```
+
+
 
 More info: [Server](https://hexo.io/docs/server.html)
 

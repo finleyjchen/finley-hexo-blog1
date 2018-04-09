@@ -18,7 +18,9 @@ a {
 }
 
 p {
-    letter-spacing: 0.5px;
+    line-height:23px;
+    margin-bottom:15px;
+    font-size:15px;
 }
 .article-header, .article-inner, .article-footer {
     
@@ -52,6 +54,16 @@ p {
 
 .header-logo a {
     color:black;
+}
+
+.row {
+    margin:0;
+}
+
+@media screen and (max-width:350px) {
+    .header-logo h3{
+        font-size:15px;
+    }
 }
 
 .nav {
@@ -99,6 +111,14 @@ p {
     }
 }
 
+.name {
+    color:black;
+}
+
+.name:hover {
+    color:black;
+    text-decoration:none;
+}
 
 .post-data {
     text-align:center;
@@ -172,5 +192,13 @@ footer {
 }
 
 .back-btn {
+    margin-top:0.7em;
+    margin-left:0.5em;
+    color:black;
+    transition:0.4s ease-out;
+}
 
+.back-btn:hover {
+    background-color:black;
+    color:white;
 }

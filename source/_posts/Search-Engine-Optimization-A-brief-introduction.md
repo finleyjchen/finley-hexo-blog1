@@ -62,3 +62,5 @@ SEO specialists follow many of Google's self-outlined best practices. I will be 
 [Search Engine Land's guide to SEO](https://searchengineland.com/guide/what-is-seo)
 
 [Search Engine Land Google algorithm changes](https://searchengineland.com/8-major-google-algorithm-updates-explained-282627)
+
+[Patrick Stexton's varvy.com SEO guide and tools](https://varvy.com)

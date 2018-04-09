@@ -22,3 +22,14 @@ hexo.extend.tag.register('fancybox', function(args){
     '</a>' +
     (title ? '<span class="caption">' + title + '</span>' : '');
 });
+
+var pagination = require('hexo-pagination');
+
+pagination('/tags/hexo', [], {
+  perPage: 10,
+  format: 'page/%d/',
+  layout: ['archive', 'index'],
+  data: {
+    tag: 'hexo'
+  }
+});
