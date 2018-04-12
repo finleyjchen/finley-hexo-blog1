@@ -79,3 +79,10 @@ theme: finley-theme
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+archive_generator:
+  per_page: 1
+  yearly: true
+  monthly: true
+  daily: false
+  order_by: -date
